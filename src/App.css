@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+#logo{
+  height: 10%;
+  padding-bottom: 1%;
+  font-size: xx-large;
+}
+.card{
+  padding-left: 2%;
+}
+#createDate{
+  color: #3a3a3a;
+  font-size: small;
+}
+.allNoteButtons{
+height:51px ;
+color: white;
+border: 0px;
+background-color: white;
+}
+.allNotesImg{
+  height:20px ;
+  width: 20px; 
+  
+}
+#addNewNote{
+  height:30px ;
+  width: 30px; 
+ 
+}
+#addNewNoteButton{
+  background-color: white;
+  border: 0px;
+  margin-top: 10px;
+}
+.ImgNaveBar{
+  height:20px ;
+  width: 20px; 
+}
+.buttonNaveBar{
+  background-color: white;
+  border: 0px;
+  margin-right: 4%;
+  margin-bottom: 2%;
+}
+.input{
+  border: 0px;
+  padding: 0.5% 3%;
+  width: 70%;
+}
+.edit{
+  border: 0px;
+  margin: 0.5% 4%;
+}
+#addItem{
+  background-color: white;
+  border: 0px;
+  margin-left: 1px;
+}
