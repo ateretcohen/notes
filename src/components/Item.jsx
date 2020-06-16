@@ -27,8 +27,8 @@ export default class Item extends Component {
         return (
             <div className="edit">
                 <input type="checkbox" onChange={this.radioChenge}/><span className="checkboxSpan"></span>
-                <input type="text" className="input" style={{width:'30%', marginLeft:'5px'}} onChange={(e)=>{this.setState({itemText:e.target.value})}} placeholder="add item"/>
-                <button id="addItem" onClick={this.text}><b>add</b></button>
+                <input type="text" className="input" style={{width:'70%', marginLeft:'5%'}} onChange={(e)=>{this.setState({itemText:e.target.value})}} placeholder="add item"/>
+                <button id="addItem" onClick={this.text} style={{width:'15%',marginLeft:'5%',backgroundColor:'rgb(151, 199, 247)',padding: '1% 3%',borderRadius:'4px',marginTop:'2%'}}><b>add</b></button>
             </div>
         )
     }

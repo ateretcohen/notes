@@ -8,6 +8,7 @@ import Item from './components/Item';
 import AllItems from './components/AllItems';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './components/Logo';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 export default class App extends Component {
@@ -26,8 +27,8 @@ export default class App extends Component {
     {
       var date=this.getDate();
       //create new note
-     this.setState({noteList:[{name:name , date:date, editDate:'',items:[]},...this.state.noteList]})
-     this.setState({noteIndex:{name:name , date:date, editDate:'',items:[]}})
+     this.setState({noteList:[{name:name , date:date, editDate:date,items:[]},...this.state.noteList]})
+     this.setState({noteIndex:{name:name , date:date, editDate:date,items:[]}})
      if(flag===true)
      {
        this.setState({index:0})
@@ -114,15 +115,15 @@ export default class App extends Component {
     return (
       <div className="container">
         <Router>
-          
           <Link to="/AddNewNote"><button id="addNewNoteButton" style={{marginBottom:'4%'}}><img id="addNewNote" src="https://cdn2.iconfinder.com/data/icons/business-and-internet/512/Note-512.png"/></button></Link>
           <Switch>
           <Route exact path='/' component={()=>{
             return (<div>
               <Logo/>
+              <hr/>
               {
                 this.state.noteList.map((e,i)=>{
-                  return <AllNotes name={e.name} index={i} date={e.date} deleteFromNotes={this.deleteFromNotes} saveI={this.saveIndex}/>
+                  return <AllNotes name={e.name} index={i} date={e.editDate} deleteFromNotes={this.deleteFromNotes} saveI={this.saveIndex}/>
                 })
               }
             </div>)
