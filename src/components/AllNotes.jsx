@@ -13,7 +13,7 @@ export default class AllNotes extends Component {
     
     render() {
         return (
-           <div className="card">
+           <div className="card" style={{backgroundColor:'rgb(207, 230, 253)'}}>
                <div className="row">
                <div className="col-9">
                 <b>{this.props.name}</b><br/>

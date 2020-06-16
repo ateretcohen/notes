@@ -20,8 +20,9 @@ export default class EditNote extends Component {
             <Link to="/"><button className="buttonNaveBar" onClick={()=>{this.props.deleteFromNotes(this.props.index)}}><img className="allNotesImg" src="https://image.flaticon.com/icons/png/512/66/66847.png"/><b>  delete</b></button></Link>  
            
             <Link to="/"><button className="buttonNaveBar" onClick={()=>{this.props.updateNote()}}><b>done</b></button></Link>  
-             <br/>
-            <b className="edit" style={{marginTop:'10px'}}>{this.props.name}</b>
+            
+             <hr/> <br/> 
+           <p><b className="edit" style={{marginTop:'10px'}}>{this.props.name}</b></p> 
 
             </div>
         )
